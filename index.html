@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Home Page</title>
+</head>
+<body>
+    <div class="container">
+        <div class="top">
+            <div class="top-display">
+            <div class="top-left">
+                <div class="players">Players</div>
+                 <div class="number">0/11</div>
+            </div>
+            <div class="top-middle-Team A">
+                <div class="Team-A">Team A</div>
+                <div class="Team-A-number">0/11</div>
+            </div>
+            <div class="top-middle-Team B">
+                <div class="Team-B">Team B</div>
+                <div class="Team-B-number">0/11</div>
+            </div> 
+            <div class="top-right">
+                <div class="creditsleft">Credits</div>
+                 <div class="credits">0</div>
+            </div>
+            </div>
+          
+            <!-- progressss bar -->
+            <div class="top-bottom">
+              <div class="progress-bar">
+                <div class="progress" ></div>
+                <div class="progress "></div>
+                <div class="progress"></div>
+                <div class="progress"></div>
+                <div class="progress"></div>
+                <div class="progress"></div>
+                <div class="progress"></div>
+                <div class="progress"></div>
+                <div class="progress"></div>
+                <div class="progress"></div>
+                <div class="progress"></div>      
+               </div>
+           </div> 
+        </div>
+        <div class="middleclass">
+            <button class="btn" id ="wicketshow" >Wicket Keeper</button>
+            <button class="btn" id="batshow" >Batsmen</button>
+            <button class="btn " id="allshow">All Rounder</button>
+            <button class="btn" id="ballshow">Bowler</button>   
+        </div>
+        
+            <table class="table-to-hide">
+                <tr>
+                    <th></th>
+                    <th>Player Name</th>
+                    <th>Credits</th>
+                    <th>Add</th>
+                </tr>
+                
+                <div class="batsmen-display">
+                    <p id="selection">Select 2-4 Batsmen</p>
+              
+                <tr class="batsmen-display row">
+                    <td class="image"><img src="./kohli.jpg" alt="" width="100" height="100"></td>
+                    <td class="name">ViratKohli</td>
+                    <td class="data">97</td>
+                    <td  class="add-data"><Button class="add Team-1 add-batsmen">+</Button></td>
+                </tr>
+               
+              
+                <tr class="batsmen-display row">
+                    <td class="image"><img src="./david-warner.jpg" alt="" width="100" height="100"></td>
+                    <td class="name">DavidWarner</td>
+                    <td class="data">67</td>
+                    <td  class="add-data"><Button class="add Team-2 add-batsmen">+</Button></td>
+                </tr>
+               
+              
+                <tr class="batsmen-display row">
+                    <td class="image"><img src="./rohit-sharma.jpg" alt="" width="100" height="100"></td>
+                    <td class="name">RohithSharma</td>
+                    <td class="data">71</td>
+                    <td  class="add-data"><Button class="add Team-1 add-batsmen">+</Button></td>
+                </tr>
+               
+              
+                <tr class="batsmen-display row">
+                    <td class="image"><img src="./aaron-finch.jpg" alt="" width="100" height="100"></td>
+                    <td class="name">AaronFinch</td>
+                    <td class="data">56</td>
+                    <td  class="add-data"><Button class="add Team-2 add-batsmen">+</Button></td>
+                </tr>
+               
+                <tr class="batsmen-display row">
+                    <td class="image"><img src="./kl-rahul.jpg" alt="" width="100" height="100"></td>
+                    <td class="name">KLRahul</td>
+                    <td class="data">63</td>
+                    <td  class="add-data"><Button class="add Team-1 add-batsmen">+</Button></td>
+                </tr>
+
+                <tr class="batsmen-display row">
+                    <td class="image"><img src="./glenn-maxwell.jpg" alt="" width="100" height="100"></td>
+                    <td class="name">GlennMaxwell</td>
+                    <td class="data">34</td>
+                    <td  class="add-data"><Button class="add Team-2 add-batsmen">+</Button></td>
+                </tr>
+                </div>
+
+                <div class="bowler-display">
+                    <p id="selection" class="hide-me">Select 2-4 Bowlers</p>
+                    <tr class="bowler-display row">
+                        <td class="image"><img src="./nathan-lyon.jpg" alt="" width="100" height="100"></td>
+                        <td class="name">NathonLyon</td>
+                        <td class="data">55</td>
+                        <td  class="add-data"><Button class="add Team-2 add-bowler">+</Button></td>
+                    </tr>
+                   
+                        <tr class="bowler-display row">
+                            <td class="image"><img src="./bumrah.jpg" alt="" width="100" height="100"></td>
+                            <td class="name">Bumrah</td>
+                            <td class="data">83</td>
+                            <td  class="add-data"><Button class="add Team-1 add-bowler">+</Button></td>
+                        </tr>
+            
+                        <tr class="bowler-display row">
+                            <td class="image"><img src="./mitchell-starc.jpg" alt="" width="100" height="100"></td>
+                            <td class="name">MitchellStarc</td>
+                            <td class="data">27</td>
+                            <td  class="add-data"><Button class="add Team-2 add-bowler">+</Button></td>
+                        </tr>
+
+                        <tr class="bowler-display row">
+                            <td class="image"><img src="./yuzvendra-chahal.jpg" alt="" width="100" height="100"></td>
+                            <td class="name">YuzvChahal</td>
+                            <td class="data">27</td>
+                            <td  class="add-data"><Button class="add Team-1 add-bowler">+</Button></td>
+                        </tr>
+                    
+                   
+                   
+                        <tr class="bowler-display row ">
+                            <td class="image"><img src="./marcus-stoinis.jpg" alt="" width="100" height="100"></td>
+                            <td class="name">MarcusStoinis</td>
+                            <td class="data">64</td>
+                            <td  class="add-data"><Button class="add Team-2 add-bowler">+</Button></td>
+                        </tr>
+                    
+                   
+                        <tr class="bowler-display row">
+                            <td class="image"><img src="./mohammed-shami.jpg" alt="" width="100" height="100"></td>
+                            <td class="name">MohmdShammi</td>
+                            <td class="data">32</td>
+                            <td  class="add-data"><Button class="add Team-1 add-bowler">+</Button></td>
+                        </tr>
+
+                        
+                    </div>
+                    
+                
+                <div class="wicketkeeper-display">
+                    <p id="selection" class="hide-me">Select 1-2 Wicket Keepers</p>
+                    <tr class="wicketkeeper-display row">
+                        <td class="image"><img src="./peter-nevill.jpg" alt="" width="100" height="100"></td>
+                        <td class="name">PeterNevill</td>
+                        <td class="data">65</td>
+                        <td  class="add-data"><Button class="add Team-2 add-wicketkeeper">+</Button></td>
+                    </tr>
+                   
+                        <tr class="wicketkeeper-display row">
+                            <td class="image"><img src="./ms-dhoni.jpg" alt="" width="100" height="100"></td>
+                            <td class="name">Dhoni</td>
+                            <td class="data">62</td>
+                            <td  class="add-data"><Button class="add Team-1 add-wicketkeeper">+</Button></td>
+                        </tr>
+                    
+                   
+                        <tr class="wicketkeeper-display row">
+                            <td class="image"><img src="./steven-smith.jpg" alt="" width="100" height="100"></td>
+                            <td class="name">SteveSmith</td>
+                            <td class="data">67</td>
+                            <td  class="add-data"><Button class="add Team-2 add-wicketkeeper">+</Button></td>
+                        </tr>
+                    
+                   
+                        <tr class="wicketkeeper-display row">
+                            <td class="image"><img src="./rishabh-pant.jpg" alt="" width="100" height="100"></td>
+                            <td class="name">RishabPant</td>
+                            <td class="data">41</td>
+                            <td  class="add-data"><Button class="add Team-1 add-wicketkeeper">+</Button></td>
+                        </tr>
+        
+                
+                   
+                        <tr class="wicketkeeper-display row">
+                            <td class="image"><img src="./alex-carey.jpg" alt="" width="100" height="100"></td>
+                            <td class="name">AlexCarey</td>
+                            <td class="data">65</td>
+                            <td  class="add-data"><Button class="add Team-2 add-wicketkeeper">+</Button></td>
+                        </tr>
+                    </div>
+                
+                <div class="allrounder-display">
+                    <p id="selection">Select 1-2 All Rounders</p>
+                  
+                    <tr class="allrounder-display row">
+                        <td class="image"><img src="./hardik-pandya.jpg" alt="" width="100" height="100"></td>
+                        <td class="name">HardikPandya</td>
+                        <td class="data">77</td>
+                        <td  class="add-data"><Button class="add Team-1  add-allrounder">+</Button></td>
+                    </tr>
+            
+                    <tr class="allrounder-display row">
+                        <td class="image"><img src="./shane-watson.jpg" alt="" width="100" height="100"></td>
+                        <td class="name">ShaneWatson</td>
+                        <td class="data">43</td>
+                        <td  class="add-data"><Button class="add Team-2  add-allrounder">+</Button></td>
+                    </tr>
+                 
+
+                  
+                    <tr class="allrounder-display row">
+                        <td class="image"><img src="./jadeja.jpg" alt="" width="100" height="100"></td>
+                        <td class="name">RavindraJadeja</td>
+                        <td class="data">51</td>
+                        <td  class="add-data"><Button class="add Team-1  add-allrounder">+</Button></td>
+                    </tr>
+        
+                  
+                    <tr class="allrounder-display row">
+                        <td class="image"><img src="./kane-richardson.jpg" alt="" width="100" height="100"></td>
+                        <td class="name">KaneRichardson</td>
+                        <td class="data">27</td>
+                        <td  class="add-data"><Button class="add Team-2  add-allrounder">+</Button></td>
+                    </tr>
+                   
+                  
+                    <tr class="allrounder-display row">
+                        <td class="image"><img src="./bhuvneshwar-kumar.jpg" alt="" width="100" height="100"></td>
+                        <td class="name">BhuvneshwarKumar</td>
+                        <td class="data">27</td>
+                        <td  class="add-data"><Button class="add Team-1  add-allrounder">+</Button></td>
+                    </tr>
+
+                   </div>
+                   
+                
+            
+            </table>
+        </div>
+    
+    <div id="ground">
+        <h1>Batsmen</h1>
+        <div id="batsmenarea">
+           
+        </div>
+        <h1>Bowlers</h1>
+        <div id="bowlerarea">
+            
+        </div>
+        <h1>Wicket Keepers</h1>
+        <div id="wicketkeeperarea">
+            
+        </div>
+        <h1>All Rounders</h1>
+        <div id="allrounderarea">
+            
+        </div>
+    </div>
+    
+        <div class="my-selected-table">
+            <h1 id="dream-nav">Your CRICKET MANIA Team</h1>
+            <table  class="my-dream-team">
+            </table>
+            <div class="play-now">
+                <button class="play-btn">Check Scores</button>
+            </div>
+            <div class="final-score" id="center" >
+                <div class="high-scores">
+                    <div class="team-1-score " id="score1">
+        
+                    </div>
+                    <br>
+                    <div class="team-2-score" id="score2">
+                     
+                    </div>
+                </div>
+                <div id="display-winner">
+        
+                </div>
+            </div>
+        </div>
+    
+     
+
+    
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="./script.js">
+  </script>
+</html>

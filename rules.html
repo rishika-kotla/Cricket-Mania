@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rules</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        color:black;
+        font-size: large;
+        background-color: rgb(245, 241, 241);
+    }
+    h1{
+        background-color:rgba(22, 22, 192, 0.795);
+        color: white;
+        text-align: center;
+    }
+    .list{
+        background-color: white;
+        margin: 2%;
+        padding: 5%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        border-radius: 1rem;
+    }
+    p{
+        margin: 2%;
+        margin-top: 1%;
+    }
+    .container{
+        width: 100%;
+        margin-right: 4%;
+    }
+    ul>li{
+        margin-left: 3%;
+    }
+    .button {
+  border-radius: 4px;
+  background-color: rgba(22, 22, 192, 0.795);
+  color: white;
+  text-align: center;
+  font-size: 33px;
+  padding: 10px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  border: none;
+   justify-content: center;
+   float: right;
+   margin-right: 25px;
+   margin-top: 15px;
+  
+}
+
+
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+</style>
+
+<body>
+    <div class="container">
+    <h1>
+        Rules And Instructions
+    </h1>
+        <div class="list">
+        <ol>
+             <li>
+                 <ul>Select players for your Cricket Mania team from all 4 of the categories mentioned below:
+
+                   <li><b> WK:</b> Wicket-keeper</li>
+                    
+                   <li> <b>BAT:</b> Batsman </li>
+                    
+                    <li><b>BWL:</b> Bowlers</li>
+                    
+                   <li><b> AR:</b> All-rounders</li></ul></li>
+            <li>You must select a total of 11 players.</li>
+            <li>Your Team should consist of a minimum of 1 Wicket Keeper , 1 All Rounder, 2 Batsmen, and 2 Bowlers.</li>
+            <li>You can only select a maximum of 2 Wicket Keepers, 2 All Rounders, 4 Batsmen and 4 Bowlers.</li>
+            <li>The Team which scores more spending less number credits wins the game</li>
+                 </ol>
+                 <br>
+
+        <h3>ARE YOU READY TO PLAY CRICKET MANIA??</h3>
+        <p>Click on Continue to Continue!</p>
+    </div>
+    <div id="center">   <a href="./index.html"><button class="button"><span>Continue</span></button></a></div> 
+   
+    </div>
+   
+</body>
+</html>
